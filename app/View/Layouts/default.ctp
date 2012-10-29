@@ -29,18 +29,29 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic.css');
+		//echo $this->Html->css('cake.generic.css');
+		echo $this->Html->css('bootstrap-responsive.css');
+		echo $this->Html->css('bootstrap.css');
+
+		echo $this->Html->script('bootstrap/bootstrap');
+		echo $this->Html->script('jquery.min');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
 </head>
 <body>
 	<div id="container">
-		<div id="header">
+		<!--<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
+		</div>-->
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
