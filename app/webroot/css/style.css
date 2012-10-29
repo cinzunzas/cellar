@@ -1,0 +1,85 @@
+body { padding-top: 60px; }
+
+h1, h2, h3, h4, h5, h6{ }
+
+.container{ position: relative; }
+
+.number { white-space: nowrap; }
+
+.editable-number { white-space: nowrap; color: #0000FF; background-color: #CCFFFF; }
+
+.dashboard-text-box { font-size: 100%; height: auto; line-height: 10px; width: auto; }
+.red-number { white-space: nowrap; color: red; }
+.green-number { white-space: nowrap; color: green; }
+.black-number { white-space: nowrap; color: black; }
+.red-header { white-space: nowrap; color: red; background-color: #fce5cd; }
+.green-header { white-space: nowrap; color: green; background-color: #ccffcc; }
+.black-header { white-space: nowrap; color: black; }
+
+.red-roi {  border-left:5px solid #9E292B !important; background-color:rgba(255,209,214,0.4) !important;  }
+.green-roi { border-left:5px solid #669933 !important; background-color:rgba(198,255,199,0.4) !important; }
+.black-roi { color: black; }
+.yellow-roi { border-left:5px solid #E3E501 !important; background-color:rgba(251,255,207,0.4) !important;}
+.orange-roi { border-left:5px solid #D06A39 !important; background-color:rgba(255,238,186,0.4) !important;}
+
+table#dashboard.data-table tr:hover td.red-roi {  background-color:rgba(255,209,214,0.7) !important; border-left:5px solid #9E292B !important; }
+table#dashboard.data-table tr:hover td.green-roi { background-color:rgba(198,255,199,0.7) !important; border-left:5px solid #669933 !important; }
+table#dashboard.data-table tr:hover td.black-roi { color: black; }
+table#dashboard.data-table tr:hover td.yellow-roi { background-color:rgba(251,255,207,0.7) !important; border-left:5px solid #E3E501 !important; }
+table#dashboard.data-table tr:hover td.orange-roi { background-color:rgba(255,238,186,0.7) !important; border-left:5px solid #D06A39 !important; }
+
+
+#wrapper { padding:20px; }
+
+img.ui-datepicker-trigger { vertical-align:top; padding-left:5px; }
+
+table.data-table tr.red { background: #FDD; border-color: #E99; color: #A22; }
+table.data-table tr.yellow { background: #FFD; border-color: #DD8; color: #880; }
+table.data-table tr.orange { background: #FED; border-color: #EC9; color: #A72; }
+table.data-table tr.green { background: #DFD; border-color: #BEB; color: #090; }
+
+table.data-table { width:90%; margin:0 auto; overflow: hidden; }
+table.data-table td { padding:5px 2px; text-align:right; }
+table.data-table thead th { background-color:#D2DBE5; }
+table.data-table tr:hover td { background-color:#f1f1f1;};
+
+/* Budget */
+table#dashboard { display:none;}
+table#dashboard.data-table td { border:0 none;}
+table#dashboard.data-table tr.country td { background-color:#f8f8f8; border-top:1px solid #999; border-bottom:1px solid #999; }
+table#dashboard.data-table tr.country td { font-size:13px; }
+table#dashboard.data-table td { font-size:11px;}
+
+table#dashboard.data-table tr.country td.country-name { font-weight:bold; }
+table#dashboard.data-table tr.time th { border-bottom:1px solid #666; border-right:1px solid #999; }
+table#dashboard.data-table tr th { border-left:0 none;}
+
+table#dashboard.data-table tr td.channel, 
+table#dashboard.data-table tr td.target,
+table#dashboard.data-table tr.country td.country-name,
+table#dashboard.data-table tr.country td.cpl,
+table#dashboard.data-table tr td.budget,
+table#dashboard.data-table tr td.number { padding-right:5px; }
+
+table#dashboard.data-table tr td.channel,
+table#dashboard.data-table tr.country td.spent,
+table#dashboard.data-table tr.country td.country-name,
+table#dashboard.data-table tr td.budget,
+table#dashboard.data-table tr .spent { border-right:1px solid #999; }
+
+table#dashboard.data-table tr td.target,
+table#dashboard.data-table tr td.budget { background-color:#DCE6F2; }
+
+table#dashboard.data-table tr td.delta_1 { border-left:1px solid #999; border-bottom:1px solid #999; font-size:13px; }
+table#dashboard.data-table tr td.runrate_1 { border-right:1px solid #999; border-bottom:1px solid #999; font-size:13px; }
+table#dashboard.data-table tr td.black-header,
+table#dashboard.data-table tr td.runrate,
+table#dashboard.data-table tr td.no-border-bottom { border-bottom:0 none !important;}
+
+table#dashboard.data-table tr td.spent-3 { border-right:0 none;}
+
+/* Campaign */
+.block-message.error p { clear:left;}
+.block-message.error p label { float:left; padding-top:0; text-align:left; font-weight:bold; width:75px;}
+.block-message.error p span.desc { display:block; padding-left:75px; }
+.block-message.error p span span.date { display:block; padding-left:75px; font-weight:bold; font-size:12px; }
